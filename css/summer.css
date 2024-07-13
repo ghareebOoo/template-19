@@ -1,0 +1,206 @@
+:root{
+    --main-color: hsl(0, 100%, 67%);
+    --secondary-color: hsl(39, 100%, 56%);
+    --thrid-color: hsl(166, 100%, 37%);
+    --four-color: hsl(234, 85%, 45%);
+    --five-color: hsl(252, 100%, 67%);
+    --six-color: hsl(241, 81%, 54%);
+    --seven-color: hsla(256, 72%, 46%, 1);
+    --eight-color: hsla(241, 72%, 46%, 0);
+    --nine-color: hsl(0, 0%, 100%);
+    --ten-color: hsl(221, 100%, 96%);
+    --eleven-color: hsl(241, 100%, 89%);
+    --tweleve-color: hsl(224, 30%, 27%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+}
+@media(max-width: 767px){
+    body{
+        background-color: var(--secondary-color);
+    }
+}
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 8px 10px 10px hsl(241deg 81% 54% / 20%);
+}
+@media(max-width: 767px){
+    .container{
+        flex-direction: column;
+        border-radius: unset;
+        box-shadow: unset;
+        padding: 20px;
+    }
+}
+.left{
+   width: 50%;
+   background-color: var(--seven-color);
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+@media(max-width: 767px){
+    .left{
+        width: 100%;
+        padding: 5px;
+        border-radius: unset;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+h1{
+    color: var(--nine-color);
+    font-size: 15px;
+    font-weight: 400;
+}
+.score{
+    box-shadow: inset 1px 1px 12px 0px hsl(252deg 100% 67% / 42%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-score{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--nine-color);
+}
+.second-score{
+   margin-top: 10px;
+   font-size: 10px;
+   color: hsl(221deg 100% 96% / 41%);
+}
+.info{
+   text-align: center;
+}
+.left h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--ten-color);
+}
+@media(max-width: 767px){
+    .left h2{
+        margin-top: 10px;
+    }
+}
+p{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--ten-color);
+    line-height: 1.5;
+}
+.right{
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+@media(max-width: 767px){
+    .right{
+        width: 100%;
+        border-radius: unset;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+.right h2{
+    font-weight: 400;
+    font-size: 16px;
+}
+.scores{
+    margin-top: 20px;
+}
+.sc{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.so{
+    display: flex;
+    gap: 10px;
+}
+.score-reaction{
+    background-color: hsl(0deg 100% 67% / 33%);
+}
+.score-reaction h3{
+    color: hsl(0, 100%, 67%);
+}
+.score-memory{
+    background-color: hsl(39deg 100% 56% / 28%);
+}
+.score-memory h3{
+    color: var(--secondary-color);
+}
+.score-verbal{
+    background-color: #0080005e;
+}
+.score-verbal h3{
+    color: var(--thrid-color);
+}
+.score-visual{
+    background-color: hsl(234deg 85% 45% / 24%);
+}
+.score-visual h3{
+    color: var(--four-color);
+}
+.black{
+  color: black;
+  font-weight: bold;
+}
+.grey{
+    color: #0000004f;
+}
+.btn{
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--seven-color);
+    color: var(--ten-color);
+}
+@media(max-width: 767px){
+    .btn{
+        background-color: var(--tweleve-color);
+    }
+}
